@@ -1,18 +1,18 @@
-'use strict';
+"use strict";
 
-const path = require('path');
-const root = path.join(__dirname, '..');
-const merge = require('webpack-merge');
+const path = require("path");
+const root = path.join(__dirname, "..");
+const merge = require("webpack-merge");
 
 module.exports = (env) => {
     let config = {
         entry: {
-            main: path.join(root, 'src', 'main')
+            main: path.join(root, "src", "main"),
         },
 
         output: {
-            filename: 'bundle.js',
-            path: path.join(root, 'dist')
+            filename: "bundle.js",
+            path: path.join(root, "dist"),
         },
 
         module: {
@@ -20,27 +20,31 @@ module.exports = (env) => {
                 {
                     test: /\.js$/,
                     exclude: /node_modules/,
-                    use: 'babel-loader'
+                    use: "babel-loader",
                 },
                 {
                     test: /\.html$/,
                     exclude: /node_modules/,
-                    loader: 'file-loader',
+                    loader: "file-loader",
                     options: {
-                        name: '[name].[ext]',
+                        name: "[name].[ext]",
                     },
-                }
-            ]
+                },
+                {
+                    test: /\.(jpe?g|png|gif|svg)$/i,
+                    loader: "file-loader?name=/src/img/[name].[ext]",
+                },
+            ],
         },
 
-        plugins: []
+        plugins: [],
     };
 
     // Builds
-    const build = env && env.production ? 'prod': 'dev';
+    const build = env && env.production ? "prod" : "dev";
     config = merge.merge(
         config,
-        require(path.join(root, 'webpack', 'builds', `webpack.config.${build}`))
+        require(path.join(root, "webpack", "builds", `webpack.config.${build}`))
     );
 
     // Addons
@@ -48,8 +52,8 @@ module.exports = (env) => {
     addons.forEach((addon) => {
         config = merge.merge(
             config,
-            require(path.join(root, 'webpack', 'addons', `webpack.${addon}`))
-        )
+            require(path.join(root, "webpack", "addons", `webpack.${addon}`))
+        );
     });
 
     console.log(`Build mode: \x1b[33m${config.mode}\x1b[0m`);
@@ -59,6 +63,6 @@ module.exports = (env) => {
 
 function getAddons(env) {
     if (!env || !env.addons) return [];
-    if (typeof env.addons === 'string') return env.addons.split(',');
+    if (typeof env.addons === "string") return env.addons.split(",");
     return env.addons;
 }

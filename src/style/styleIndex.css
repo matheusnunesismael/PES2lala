@@ -1,13 +1,4 @@
-<!DOCTYPE html>
-<html lang="PT-BR">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">        
-        <link href="style/styleIndex.css" rel = "stylesheet">
-        <title>Documentação | Otorrino DF</title>
-        <style>
-            @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;600;800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap');
 *{
     padding:0px;
@@ -517,38 +508,3 @@
     }
 
 }
-        </style>
-    </head>
-    <body>
-        <img class="logo" src="https://res.cloudinary.com/nunes/image/upload/v1659837106/products/T%C3%ADtulo_tkr3cn.png">
-        <div class="back">
-            <div class="opcoes">
-                <img class="retangulo" src="./img/retangulo.png" >
-                            
-                <nav class="nav_menu">
-                    <ul class="menu" >                  
-                    <li class="documentos"><a href="relatorios.html"><img class="imgDoc" src="img/register_book.png"></a></li>
-                    <li class="configuracoes"><a href="#"><img class="imgCon" src="img/configuracoes.png"></a></li>
-                    <li class="perfil"><a href="perfil.html"><img class="imgPer" src="img/user.png"></a></li>
-                    <li class="registro"><a href="registro.html"><img class="imgReg" src="img/agenda.png"></a></li>
-                    </ul>                
-                </nav>
-            </div>
-            <div class="anos">
-                <div class="A2019">
-                    <h2>2019</h2>
-                </div>
-                <div class="A2020">
-                    <h2>2020</h2>
-                </div>
-                <div class="A2021">
-                    <h2>2021</h2>
-                </div>
-                <div class="A2022">
-                    <h2>2022</h2>
-                </div>
-            </div>
-    </div>
-    <script src="bundle.js"></script>
-    </body>
-</html> 

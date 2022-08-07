@@ -1,0 +1,526 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;600&display=swap');
+*{
+    padding:0px;
+    box-sizing: 0px;
+    margin:0px;
+    background-color: #FAFAF9;
+}
+@media (max-width: 668px) {
+    
+    .logo{
+        width: 38%;
+        height: 25%;
+        margin-top: 3%;
+        margin-left: 30%;
+    }
+    .back{
+        position: relative;
+        width: 400px;
+        height: 540px;
+        margin-top: 3%;
+        margin-left: 10%;
+        background-color: #adb3be4d;   
+        border-radius: 15px;
+    }
+
+    .titulo{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 45px;
+        line-height: 90px;
+        letter-spacing: 0.01em;  
+        margin-left:36%;
+        margin-top:10%;  
+    }
+
+    .email,.senha{
+        width: 60%;
+        height: 6%;
+        border-radius: 5px;
+        border: none;
+        background-color: #3a486541;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        color: black;
+        
+    }
+
+    .email:focus,.senhat:focus{
+        background-color: #3a48652b;
+        border: 0.5px solid #3A4865;
+    }
+
+    ::-webkit-input-placeholder {
+        padding:10px;
+        opacity: 0.7;
+        font-weight: normal;
+        font-size: small;
+    }
+
+    .senha{
+        position: absolute;
+        margin-left:20%;
+        margin-top:70%;
+        color: black;
+    }
+
+    .email{
+        position: absolute;
+        
+        margin-left:20%;
+        margin-top:50%;
+    }
+
+    .senha:focus{
+    border: none;
+    }
+
+    h3{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 15px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+    }
+
+    .txtemail{    
+        margin-left:22%;
+        margin-top:37%;
+    }
+
+    .txtsenha{
+        margin-left:22%;
+        margin-top:57%;
+    }
+
+    .esqueciLink{
+        position: absolute;
+        background: none;
+        color: #949CA6;
+        font-family: 'Inter', sans-serif;
+        font-weight:500;
+        font-size: 11px;
+        margin-left:22%;
+        margin-top:80%;
+        text-decoration: none;
+    }
+
+    .esqueciLink:hover{
+        color: #3A4865;
+        font-weight: 600;
+        font-size: 11.5px;
+        transition: 1.1s ease-in-out;
+    }
+    .logarBt{
+        position: absolute;
+        background-color: #3A4865;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;    
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left:35%;
+        margin-top:95%;
+        text-decoration: none;
+        text-align: center;    
+    }
+}
+@media (min-width: 668px) {
+    
+    .logo{
+        width: 34%;
+        height: 20%;
+        margin-top: 3%;
+        margin-left: 43%;
+    }
+    .back{
+        position: relative;
+        width: 474px;
+        height: 540px;
+        margin-top: 3%;
+        margin-left: 25%;
+        background-color: #adb3be4d;   
+        border-radius: 15px;
+    }
+
+    .titulo{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 35px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+        margin-left:40%;
+        margin-top:10%;  
+    }
+
+    .email,.senha{
+        width: 60%;
+        height: 6%;
+        border-radius: 5px;
+        border: none;
+        background-color: #3a486541;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        color: black;
+        
+    }
+
+    .email:focus,.senhat:focus{
+        background-color: #3a48652b;
+        border: 0.5px solid #3A4865;
+    }
+
+    ::-webkit-input-placeholder {
+        padding:10px;
+        opacity: 0.7;
+        font-weight: normal;
+        font-size: small;
+    }
+
+    .senha{
+        position: absolute;
+        margin-left:20%;
+        margin-top:65%;
+        color: black;
+    }
+
+    .email{
+        position: absolute;
+        
+        margin-left:20%;
+        margin-top:45%;
+    }
+
+    .senha:focus{
+    border: none;
+    }
+
+    h3{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 15px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+    }
+
+    .txtemail{    
+        margin-left:22%;
+        margin-top:35%;
+    }
+
+    .txtsenha{
+        margin-left:22%;
+        margin-top:55%;
+    }
+
+    .esqueciLink{
+        position: absolute;
+        background: none;
+        color: #949CA6;
+        font-family: 'Inter', sans-serif;
+        font-weight:500;
+        font-size: 11px;
+        margin-left:22%;
+        margin-top:73%;
+        text-decoration: none;
+    }
+
+    .esqueciLink:hover{
+        color: #3A4865;
+        font-weight: 600;
+        font-size: 11.5px;
+        transition: 1.1s ease-in-out;
+    }
+    .logarBt{
+        position: absolute;
+        background-color: #3A4865;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;    
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left:35%;
+        margin-top:85%;
+        text-decoration: none;
+        text-align: center;    
+    }
+}
+
+@media (min-width: 1024px) {
+    
+    .logo{
+        width: 24%;
+        height: 20%;
+        margin-top: 3%;
+        margin-left: 40.5%;
+    }
+    .back{
+        position: relative;
+        width: 474px;
+        height: 540px;
+        margin-top: 3%;
+        margin-left: 34%;
+        background-color: #adb3be4d;   
+        border-radius: 15px;
+    }
+
+    .titulo{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 35px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+        margin-left:40%;
+        margin-top:10%;  
+    }
+
+    .email,.senha{
+        width: 60%;
+        height: 6%;
+        border-radius: 5px;
+        border: none;
+        background-color: #3a486541;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        color: black;
+        
+    }
+
+    .email:focus,.senhat:focus{
+        background-color: #3a48652b;
+        border: 0.5px solid #3A4865;
+    }
+
+    ::-webkit-input-placeholder {
+        padding:10px;
+        opacity: 0.7;
+        font-weight: normal;
+        font-size: small;
+    }
+
+    .senha{
+        position: absolute;
+        margin-left:20%;
+        margin-top:65%;
+        color: black;
+    }
+
+    .email{
+        position: absolute;
+        
+        margin-left:20%;
+        margin-top:45%;
+    }
+
+    .senha:focus{
+    border: none;
+    }
+
+    h3{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 15px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+    }
+
+    .txtemail{    
+        margin-left:22%;
+        margin-top:35%;
+    }
+
+    .txtsenha{
+        margin-left:22%;
+        margin-top:55%;
+    }
+
+    .esqueciLink{
+        position: absolute;
+        background: none;
+        color: #949CA6;
+        font-family: 'Inter', sans-serif;
+        font-weight:500;
+        font-size: 11px;
+        margin-left:22%;
+        margin-top:73%;
+        text-decoration: none;
+    }
+
+    .esqueciLink:hover{
+        color: #3A4865;
+        font-weight: 600;
+        font-size: 11.5px;
+        transition: 1.1s ease-in-out;
+    }
+    .logarBt{
+        position: absolute;
+        background-color: #3A4865;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;    
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left:35%;
+        margin-top:85%;
+        text-decoration: none;
+        text-align: center;    
+    }
+
+}
+
+@media (min-width: 1200px) {
+    
+    .logo{
+        width: 20%;
+        height: 20%;
+        margin-top: 3%;
+        margin-left: 39.5%;
+    }
+    .back{
+        position: relative;
+        width: 474px;
+        height: 540px;
+        margin-top: 3%;
+        margin-left: 34%;
+        background-color: #adb3be4d;   
+        border-radius: 15px;
+    }
+
+    .titulo{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 35px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+        margin-left:40%;
+        margin-top:10%;  
+    }
+
+    .email,.senha{
+        width: 60%;
+        height: 6%;
+        border-radius: 5px;
+        border: none;
+        background-color: #3a486541;
+        font-family: 'Inter', sans-serif;
+        font-weight: bold;
+        color: black;
+        
+    }
+
+    .email:focus,.senhat:focus{
+        background-color: #3a48652b;
+        border: 0.5px solid #3A4865;
+    }
+
+    ::-webkit-input-placeholder {
+        padding:10px;
+        opacity: 0.7;
+        font-weight: normal;
+        font-size: small;
+    }
+
+    .senha{
+        position: absolute;
+        margin-left:20%;
+        margin-top:65%;
+        color: black;
+    }
+
+    .email{
+        position: absolute;
+        
+        margin-left:20%;
+        margin-top:45%;
+    }
+
+    .senha:focus{
+    border: none;
+    }
+
+    h3{
+        position: absolute;
+        background: none;
+        font-family: 'Inter', sans-serif;
+        font-weight: bolder;
+        color: #3A4865;
+        font-size: 15px;
+        line-height: 70px;
+        letter-spacing: 0.01em;  
+    }
+
+    .txtemail{    
+        margin-left:22%;
+        margin-top:35%;
+    }
+
+    .txtsenha{
+        margin-left:22%;
+        margin-top:55%;
+    }
+
+    .esqueciLink{
+        position: absolute;
+        background: none;
+        color: #949CA6;
+        font-family: 'Inter', sans-serif;
+        font-weight:500;
+        font-size: 11px;
+        margin-left:22%;
+        margin-top:73%;
+        text-decoration: none;
+    }
+
+    .esqueciLink:hover{
+        color: #3A4865;
+        font-weight: 600;
+        font-size: 11.5px;
+        transition: 1.1s ease-in-out;
+    }
+    .logarBt{
+        position: absolute;
+        background-color: #3A4865;
+        width: 150px;
+        height: 40px;
+        border: none;
+        border-radius: 8px;    
+        color: white;
+        font-family: 'Inter', sans-serif;
+        font-weight: 600;
+        font-size: 15px;
+        margin-left:35%;
+        margin-top:85%;
+        text-decoration: none;
+        text-align: center;    
+    }
+}
